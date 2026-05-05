@@ -1,11 +1,19 @@
 [package]
-name = "arbor"
-version = "0.1.0"
+name = "cboretum"
+version = "1.0.0"
 edition = "2024"
 authors = ["Gelaechter"]
+license = "GPL-3.0-or-later"
+description = "Command line utility that allows you to pack a directory and it's contents into a CBOR (see https://cbor.io/) representation."
+readme = "README.md"
+homepage = "https://github.com/gelaechter/cboretum"
+repository = "https://github.com/gelaechter/cboretum"
+keywords = ["cli", "cbor", "typst"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 ciborium = "0.2.2"
 clap = { version = "4.6.1", features = ["cargo", "derive"] }
 color-eyre = "0.6.5"
-serde = "1.0.228"
+env_logger = "0.11.10"
+log = "0.4.29"
